@@ -5,10 +5,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/main.css">
     <script src="java.js"></script>
 </head>
 <body>
-    
+    <main class="container">        
+        <header class="cabecalho">
+            <h1>Caculadora de Gorjeta</h1>
+            <div class="inputs">
+
+                <div class="inputs-group">
+
+                    <span class="inputs-group-legenda">
+                        <i class="fas fa-search-dollar"></i>
+                    </span>
+
+                    <span class="inputs-group-valor">
+                        <input type="number" min="0" id="valor-conta">
+                    </span>     
+
+                </div>
+
+                <div class="inputs-group">
+                    <span>Procentagem</span>                
+                    <input type="range" class="inputs-group-valor" id="range-porcentagen">
+                    <span class="inputs-group-legenda" id="porcentagen">30%</span>
+                </div>
+            </div>
+        </header>
+        <footer class="rodape">
+            <h2>Resultado</h2>
+            <div class="inputs">
+                <div class="inputs-group">
+                    <span class="inputs-group-legenda">Valor Gorjeta</span>
+                    <input type="text" class="inputs-group-valor">
+                </div>
+                <div class="inputs-group">
+                    <span class="inputs-group-legenda">Total a pagar</span>                
+                    <input type="text" class="inputs-group-valor">
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        var vConta = document.getElementById(`mouseout`,);
+
+
+
+        var rangeP = document.getElementById(`range-porcentagen`);
+        var porc = document.getElementById(`porcentagen`);
+
+        rangeP.addEventListener(`input`, clicar);
+
+        function clicar(){
+            porc.innerHTML = `${this.value}%`;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // var rangeP = document.getElementById(`range-porcentagen`);
+        // var porc = document.getElementById(`porcentagen`);
+
+        // rangeP.addEventListener(`input`, function() {
+        //     porc.innerHTML = this.value;
+        // });
+
+
+
+        // function clicar(){
+        //     porc.innerHTML = `Clicou %`
+        // }
+
+    </script>
 </body>
 </html>

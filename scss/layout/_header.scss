@@ -1,0 +1,32 @@
+@use '../common/variables';
+
+.cabecalho{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+
+    .inputs{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        align-items: center;
+
+        &-group{
+
+
+            &-legenda{
+ 
+
+            }
+
+            &-valor{
+
+
+                input{
+                    // width: 100%;
+                }
+            }
+        }
+    }
+}
+

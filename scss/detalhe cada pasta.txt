@@ -1,0 +1,6 @@
+autoload:   carrega bibliotecas externas: css, fonts,
+commom:     arquivso em comum, base html 
+component:  Ex: botoes, carrosel
+core:       central de funcoes, mixins
+layout:     cada parte da pagina: header, footer
+pages:      cada pagina do site: home, contato, servicos
