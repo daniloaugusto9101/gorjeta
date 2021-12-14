@@ -30,6 +30,7 @@
                     <span>Procentagem</span>                
                     <input type="range" class="inputs-group-valor" id="range-porcentagen">
                     <span class="inputs-group-legenda" id="porcentagen">30%</span>
+                    
                 </div>
             </div>
         </header>
@@ -38,31 +39,35 @@
             <div class="inputs">
                 <div class="inputs-group">
                     <span class="inputs-group-legenda">Valor Gorjeta</span>
-                    <input type="text" class="inputs-group-valor">
+                    <!-- <input type="text" class="inputs-group-valor" id="valor-gorjeta" > -->
+                    <span id="valor-gorjeta"></span>
                 </div>
                 <div class="inputs-group">
                     <span class="inputs-group-legenda">Total a pagar</span>                
-                    <input type="text" class="inputs-group-valor">
+                    <input type="text" class="inputs-group-valor" id="valor-total">
                 </div>
             </div>
         </footer>
     </main>
 
     <script>
-        var vConta = document.getElementById(`mouseout`,);
-
-
-
+        // var vConta = document.getElementById(`valor-conta`);
+        var vConta = document.getElementById('valor-conta').value;
         var rangeP = document.getElementById(`range-porcentagen`);
         var porc = document.getElementById(`porcentagen`);
+        var vGorjeta = document.getElementById(`valor-gorjeta`);
+        var vTotal = document.getElementById(`valor-total`);
 
-        rangeP.addEventListener(`input`, clicar);
 
-        function clicar(){
+
+        rangeP.addEventListener(`input`, mostrar);
+
+        function mostrar(){           
+            vGorjeta.innerHTML = vConta;
             porc.innerHTML = `${this.value}%`;
         }
 
-
+   
 
 
 
